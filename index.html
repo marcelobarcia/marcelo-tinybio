@@ -29,13 +29,13 @@
       </div>
       <div class="card" id="cards">
         <h3>Últimas tarjetas</h3>
-        <div id="cards-list">Cargando...</div>
+        <div id="cards-list">Cargando...<div id="debug-cards-count" style="margin-top:8px;color:#6b7280"></div></div>
       </div>
     </div>
     <div>
       <div class="card" id="digest">
         <h3>Digest</h3>
-        <div id="digest-list">Cargando...</div>
+        <div id="digest-list">Cargando...<div id="debug-digest-count" style="margin-top:8px;color:#6b7280"></div></div>
       </div>
     </div>
   </div>
@@ -48,7 +48,7 @@
       cardsList.innerHTML=cards.map(c=>`<div style="padding:8px;border-bottom:1px solid #0f2433"><strong>${c.name}</strong><div class="meta">${c.list} — ${c.date}</div></div>`).join('')||'<i>Sin tarjetas</i>';
       const digestList=document.getElementById('digest-list');
       digestList.innerHTML=digest.map(n=>`<div style="padding:6px;border-bottom:1px solid #0f2433"><a href="${n.url}" style="color:#9bd">${n.title}</a></div>`).join('')||'<i>Sin noticias</i>';
-    }).catch(e=>{console.error(e)});
+    }).then(()=>{ try{document.getElementById('debug-cards-count').innerText='Total tarjetas: '+(cards.length||0);document.getElementById('debug-digest-count').innerText='Total noticias: '+(digest.length||0);}catch(e){ } }).catch(e=>{console.error(e)});
   </script>
 </body>
 </html>
