@@ -47,11 +47,6 @@
     var cards=d.cards||[];var digest=d.digest||[];
     var cardsList=document.getElementById('cards-list');cardsList.innerHTML='';
     if(cards.length===0){cardsList.appendChild(safeText('Sin tarjetas'));} else{cards.filter(function(c){return (c.list||'').toLowerCase()!=='hecho';}).forEach(function(c){var div=document.createElement('div');div.style.padding='8px';div.style.borderBottom='1px solid #0f2433';var a=document.createElement('a');a.style.color='#fff';a.style.fontWeight='600';a.href=c.url||'#';a.target='_blank';a.appendChild(safeText(c.name));div.appendChild(a);var meta=document.createElement('div');meta.className='meta';meta.appendChild(safeText((c.list||'')+' — '+formatDate(c.date||'' )));div.appendChild(meta);cardsList.appendChild(div);});}
-    else{cards.forEach(function(c){var div=document.createElement('div');div.style.padding='8px';div.style.borderBottom='1px solid #0f2433';
-        var a=document.createElement('a');a.style.color='#fff';a.style.fontWeight='600';a.href=c.url||'#';a.target='_blank';a.appendChild(safeText(c.name));div.appendChild(a);
-        var meta=document.createElement('div');meta.className='meta';meta.appendChild(safeText((c.list||'')+' — '+formatDate(c.date||'') ));div.appendChild(meta);
-        cardsList.appendChild(div);
-    });}
     var digestList=document.getElementById('digest-list');digestList.innerHTML='';
     if(digest.length===0){digestList.appendChild(safeText('Sin noticias'));} else {digest.forEach(function(n){var div=document.createElement('div');div.style.padding='6px';div.style.borderBottom='1px solid #0f2433';var a=document.createElement('a');a.style.color='#9bd';a.href=n.url||'#';a.target='_blank';a.appendChild(safeText(n.title));div.appendChild(a);digestList.appendChild(div);});}
     try{document.getElementById('debug-cards-count').innerText='Total tarjetas: '+(cards.length||0);}catch(e){}
