@@ -1,42 +1,23 @@
 {
-  "cards": [
-    {
-      "name": "Agregar este final en los post",
-      "list": "Inbox / Ideas",
-      "date": "2026-02-06T12:38:22.981Z",
-      "url": "https://trello.com/c/WvYq1TT5"
-    },
-    {
-      "name": "[Idea] Título corto",
-      "list": "Inbox / Ideas",
-      "date": "2026-02-06T11:13:31.000Z",
-      "url": "https://trello.com/c/CslQ5sTI"
-    }
-  ],
+  "cards": [],
   "digest": [
     {
-      "title": "78% Plan to Boost RPA Spend✨  Over half of companies started RPA, and 78% plan to invest more in 3 years. 📲  Automation is here to stay. ...",
-      "url": "https://t.co/fPm75ECF5X"
+      "title": "Oracle: ejemplo de noticia",
+      "url": "https://oracle.com",
+      "source": "Oracle Blog",
+      "summary": "Resumen test"
     },
     {
-      "title": "Dive deeper into effective strategies for scaling automation! Read more here: https://t.co/fjnvqYxD7A #Automation #AI",
-      "url": "https://t.co/fjnvqYxD7A"
+      "title": "UiPath: caso de uso",
+      "url": "https://uipath.com",
+      "source": "UiPath Blog",
+      "summary": "Resumen test"
     },
     {
-      "title": "🎥 On-Demand Webinar Available Now: Scale Smarter – How FIs Tackle Dispute Fraud ▶️  https://t.co/FRoHXsL0Ov  Intelligent automation helps...",
-      "url": "https://t.co/FRoHXsL0Ov"
-    },
-    {
-      "title": "🎥 On-Demand Webinar Available Now: Scale Smarter – How FIs Tackle Dispute Fraud ▶️  https://t.co/7GZbM1Twtx  Intelligent automation helps...",
-      "url": "https://t.co/7GZbM1Twtx"
-    },
-    {
-      "title": "The $AIBT expansion is moving fast!  From the XMAN Humanoid series to global partnerships in Israel and the Caribbean, AIBotics is scalin...",
-      "url": "https://t.co/IMKgDvxRyC"
-    },
-    {
-      "title": "@yourcryptodj Good morning! Right now, Layer 2 solutions and AI-powered DeFi projects are showing huge potential—scaling Ethereum with fa...",
-      "url": ""
+      "title": "IA: paper relevante",
+      "url": "https://arxiv.org",
+      "source": "ArXiv",
+      "summary": "Resumen test"
     }
   ]
 }
